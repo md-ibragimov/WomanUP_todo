@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import Login from '../../components/Login/Login';
+import Container from '@mui/material/Container';
 
 function LoginPage(props) {
   return (
-    <div>
-      OR <Link to='/signin' >REGISTER</Link>
-    </div>
+    <Container maxWidth="sm">
+      <Login/>
+    </Container>
   );
 }
 

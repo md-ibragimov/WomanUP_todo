@@ -1,0 +1,99 @@
+.file-buttons {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.todo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .todo-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+    border-bottom: 2px solid rgba(239, 237, 237, .5);
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+
+    &:hover {
+      background-color: rgba(239, 237, 237, .5);
+    }
+
+    .todo-title {
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+}
+
+.dialog {
+  margin-top: 22px;
+
+  .dialog-element {
+    width: 100%;
+    margin-top: 22px;
+  }
+}
+
+.input-file {
+  margin-top: 22px;
+  position: relative;
+  display: inline-block;
+}
+
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: rgb(255 255 255);
+  text-align: center;
+  border-radius: 4px;
+  background-color: #419152;
+  line-height: 22px;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus+span {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  background-color: #59be6e;
+}
+
+.input-file:active span {
+  background-color: #2E703A;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled+span {
+  background-color: #eee;
+}

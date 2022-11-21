@@ -1,0 +1,17 @@
+.container {
+  padding: 1.5% 0;
+
+  .add-button {
+    position: fixed !important;
+    right: 1vw;
+    bottom: 1vw;
+  }
+}
+
+.loader {
+  width: 700px;
+  height: auto;
+  overflow: hidden !important;
+  max-width: 90%;
+  margin: 0 auto !important;
+}

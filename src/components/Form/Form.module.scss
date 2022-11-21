@@ -1,0 +1,14 @@
+.form {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  .button-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

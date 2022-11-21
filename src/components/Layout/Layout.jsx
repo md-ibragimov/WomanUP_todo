@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom'
+import Header from '../Header/Header';
 
 function Layout(props) {
   return (
     <>
-      <header>hi!</header>
+      <Header />
       <Outlet />
-      <footer>2021</footer>
     </>
   );
 }

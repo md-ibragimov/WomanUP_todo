@@ -217,7 +217,7 @@ function TodoElement({ data, todos }) {
             {fileLink
               && (
                 <>
-                  <a href={fileLink}>Download</a>
+                  <a href={fileLink} download >Download</a>
                   <IconButton
                     aria-label="delete"
                     onClick={() => {
